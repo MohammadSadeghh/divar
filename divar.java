@@ -218,7 +218,7 @@ public class divar {
                 return;
             }
             if(advertise.getIsFavor().contains(username) && advertise.getTag().equals(tag)){
-                System.out.print(advertise.getTitle()+" ");
+                System.out.print(STR."\{advertise.getTitle()} ");
             }
         }
     }
@@ -280,7 +280,7 @@ class advertise{
     private String title;
     private String owner;
     private String tag;
-    private ArrayList<String> isFavor = new ArrayList<>();
+    private final ArrayList<String> isFavor = new ArrayList<>();
 
     public String getOwner() {
         return owner;
